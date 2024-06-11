@@ -71,8 +71,13 @@ def delete_restaurant_by_id(request, restaurant_id):
         except Restaurant.DoesNotExist:
             raise Http404("Restaurant does not exist")
 
+        message = {
+            "message": "Deleted Restaurant"}
+
+        # resp = message.json()
+        # data = serializers.serialize("json", message)
         restaurant.delete()
-        return HttpResponse(status=200)
+        return HttpResponse(message)
     else:
         raise HttpResponseNotAllowed("Method is not supported")
 

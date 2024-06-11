@@ -36,7 +36,7 @@ def get_restaurant_by_id(request, restaurant_id):
         query_set = Restaurant.objects.filter(pk=restaurant_id)
     except Restaurant.DoesNotExist:
         raise Http404("Restaurant does not exist")
-        data = serializers.serialize("json", query_set)
+    data = serializers.serialize("json", query_set)
     return HttpResponse(data)
 
 def update_restaurant_by_id(request, restaurant_id):

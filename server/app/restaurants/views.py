@@ -12,15 +12,17 @@ def create_a_new_restaurant(request):
         new_address = body.get("address")
         new_latitude = body.get("latitude")
         new_longitude = body.get("longitude")
-        try:
-            tag = Tag.objects.get(pk=body.get("tag_id"))
-        except Tag.DoesNotExist:
-            raise Http404("Tag does not exist")
+        # try:
+        #     tag = Tag.objects.get(pk=body.get("tag_id"))
+        # except Tag.DoesNotExist:
+        #     raise Http404("Tag does not exist")
         new_restaurant = Restaurant(name=new_name, address=new_address, latitude=new_latitude, longitude=new_longitude)
         new_restaurant.save()
-        tag.restaurants.add(new_restaurant)
-        tag.save()
-        return HttpResponse(status=200)
+        # tag.restaurants.add(new_restaurant)
+        # tag.save()
+        data = serializers.serialize('json', [new_restaurant])
+
+        return HttpResponse(data)
     else:
         raise HttpResponseNotAllowed("Method is not supported")
 
@@ -75,9 +77,9 @@ def delete_restaurant_by_id(request, restaurant_id):
             "message": "Deleted Restaurant"}
 
         # resp = message.json()
-        # data = serializers.serialize("json", message)
+        data = serializers.serialize("json", [restaurant])
         restaurant.delete()
-        return HttpResponse(message)
+        return HttpResponse(data)
     else:
         raise HttpResponseNotAllowed("Method is not supported")
 

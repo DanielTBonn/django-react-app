@@ -1,5 +1,7 @@
 from django.urls import path
 from . import views 
+from django.views.decorators.csrf import get_token
+
 
 urlpatterns =  [
     path('restaurants/new/', views.create_a_new_restaurant, 

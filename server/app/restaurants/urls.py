@@ -5,7 +5,7 @@ urlpatterns =  [
     path('restaurants/new/', views.create_a_new_restaurant, 
          name='create_a_new_restaurant'),
 
-    path('restaurants', views.get_all_restaurants, 
+    path('restaurants/', views.get_all_restaurants, 
          name='get_all_restaurants'),
 
     path('restaurants/<int:restaurant_id>/', views.get_restaurant_by_id, 
@@ -15,5 +15,7 @@ urlpatterns =  [
          name='update_restaurant_by_id'),
     
     path('restaurants/delete/<int:restaurant_id>/', views.delete_restaurant_by_id,
-         name='delete_restaurant_by_id')
+         name='delete_restaurant_by_id'),
+     
+    path('csrf-token/', get_token, name='api-csrf-token'),
 ]

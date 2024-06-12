@@ -11,7 +11,7 @@ To keep my backend skills fresh and update my understanding of Python I decided 
 
 ## Installation
   
-From the command line, git clone this repo and then download a venv as well as the requirements using pip.
+From the command line, `git clone` this repo and then download a venv as well as the requirements using `pip`.
 
 ## Usage
   

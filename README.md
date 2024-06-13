@@ -2,7 +2,7 @@
 
 ## Description
   
-To keep my backend skills fresh and update my understanding of Python I decided to build a quick project to connect a Django backend to a React front end. In doing so I am learning a new framework, adding to my dev portfolio with Python, and reinforcing my understanding of Full Stack Development.
+To keep my backend skills fresh and update my understanding of Python I decided to build a quick project to connect a Django backend to a React front end. In doing so I am learning a new framework, adding to my dev portfolio with Python, and reinforcing my understanding of Full Stack Development. This also provides an oppertunity to create a website that may be beneficial to a family members small business.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -11,7 +11,7 @@ To keep my backend skills fresh and update my understanding of Python I decided 
 
 ## Installation
   
-From the command line, git clone this repo and then download a venv as well as the requirements using pip.
+From the command line, `git clone` this repo and then download a venv as well as the requirements using `pip`.
 
 ## Usage
   

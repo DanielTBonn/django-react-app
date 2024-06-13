@@ -4,7 +4,18 @@ console.log(flowers)
 export default function Content() {
     return (
         <div>
-            <h1>Content</h1>
+            {flowers && flowers.length 
+            ? flowers.map(flower => 
+                <div>
+
+                    <p>{flower.name}</p>
+                    <p>{flower.description}</p>
+                    <p>{flower.price}</p>
+                    <img src={flower.image_url} height={"300"} width={"300"}></img>
+                </div>
+
+        ) 
+            : "Loading..."}
         </div>
     )
 }

@@ -1,31 +1,31 @@
 const flowers = [
     {
         id: 1,
-        name: "flower",
+        name: "She's Lovely",
         description: "a pretty flower",
         price: 10,
-        image_url: "https://www.thespruce.com/thmb/6hYr9pZP7hQnOQ6O0QGZ8I8UxqA=/fit-in/2000x2000/filters:no_upscale():max_bytes(150000):strip_icc()/simple-flower-5c5b0b8f46e0fb00016b0e5b.jpg",
+        image_url: "https://res.cloudinary.com/dizexseir/image/upload/w_300,c_limit,f_auto,q_auto/v1717312575/ProImages/hma8pzsne85lvf37j8r5.jpg",
     },
     {
         id: 2,
-        name: "flower",
+        name: "Wanderlust",
         description: "a pretty flower",
         price: 10,
-        image_url: "https://www.thespruce.com/thmb/6hYr9pZP7hQnOQ6O0QGZ8I8UxqA=/fit-in/2000x2000/filters:no_upscale():max_bytes(150000):strip_icc()/simple-flower-5c5b0b8f46e0fb00016b0e5b.jpg",
+        image_url: "https://res.cloudinary.com/dizexseir/image/upload/w_300,c_limit,f_auto,q_auto/v1704811612/ProImages/hncscuxzesognps5fyat.jpg",
     },
     {
         id: 3,
-        name: "flower",
-        description: "a pretty flower",
+        name: "Maid of Honor",
+        description: "Maid of Honor",
         price: 10,
-        image_url: "https://www.thespruce.com/thmb/6hYr9pZP7hQnOQ6O0QGZ8I8UxqA=/fit-in/2000x2000/filters:no_upscale():max_bytes(150000):strip_icc()/simple-flower-5c5b0b8f46e0fb00016b0e5b.jpg",
+        image_url: "https://cdn-fjlhb.nitrocdn.com/WEXbdjkxCJNCtOFUpBIKUnAKOiTLidrF/assets/images/optimized/rev-e5377ce/benwhiteflorist.com/wp-content/uploads/2023/06/MaidofHonor-2048x2048.jpg",
     },
     {
         id: 4,
-        name: "flower",
+        name: "Flower Bunch Special",
         description: "a pretty flower",
         price: 10,
-        image_url: "https://www.thespruce.com/thmb/6hYr9pZP7hQnOQ6O0QGZ8I8UxqA=/fit-in/2000x2000/filters:no_upscale():max_bytes(150000):strip_icc()/simple-flower-5c5b0b8f46e0fb00016b0e5b.jpg",
+        image_url: "https://cdn-fjlhb.nitrocdn.com/WEXbdjkxCJNCtOFUpBIKUnAKOiTLidrF/assets/images/optimized/rev-e5377ce/benwhiteflorist.com/wp-content/uploads/2023/03/FrenzyBunch-2048x2048.jpg",
     }
 ];
 
